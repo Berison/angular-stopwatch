@@ -1,0 +1,35 @@
+$transitiondelay: all .3s;
+
+.stopwatch-inner {
+  padding: 50px 100px;
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  border-radius: 40px;
+  &__head {
+    text-align: center;
+    margin-bottom: 20px;
+    span {
+      font-size: 54px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+  &__buttons {
+    button {
+      background: transparent;
+      padding: 10px 20px;
+      margin: 10px;
+      border: 1px solid #fff;
+      cursor: pointer;
+      font-size: 22px;
+      color: #fff;
+      border-radius: 40px;
+      transition: $transitiondelay;
+      &:hover {
+        transition: $transitiondelay;
+        background: #fff;
+        color: rgb(34, 193, 195);
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<h1>Stopwatch</h1>
+<div class="stopwatch-inner">
+  <div class="stopwatch-inner__head">
+    <span>{{format(timeState.minutes)}} : </span>
+    <span>{{format(timeState.seconds)}}</span>
+  </div>
+  <div class="stopwatch-inner__buttons">
+    <button type="button" class="btn-start" (click)="toggle()">
+      {{ isRunning ? 'Stop' : 'Start'}}
+    </button>
+    <button type="button" class="btn-wait" (click)="wait($event)">Wait</button>
+    <button type="button" class="btn-reset" (click)="reset()">Reset</button>
+  </div>
+</div>
